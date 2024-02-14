@@ -1,0 +1,256 @@
+/* Font Palette and Color Codes */
+aside {
+    /* Font */
+    font-family: Arial, sans-serif;
+
+    /* Color Palette */
+    --sage-green: #536878;
+    --royal-yellow: #ffcc00;
+    --grey: #333;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary), Arial, sans-serif;
+    background-color: #f1fbff;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: 50px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 43px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 10px;
+    margin-top: 25px;
+    color: rgba(27, 207, 14, 0.7);
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 0.9;
+    color: var(--sage-green);
+}
+
+.object {
+    font-weight: 900;
+    color: brown;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.navbar-nav {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-brand {
+    color: var(--sage-green);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: var(--sage-green);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--sage-green);
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+.consultant .card-body {
+    font-size: 70px;
+}
+
+#timer {
+    font-size: 8em;
+    margin-top: 10px;
+    color: #bd2020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#message {
+    font-size: 4em;
+    font-weight: bold;
+    margin-top:-100px;
+    margin-bottom: 10px;
+    color: var(--grey);
+    display: flex;
+    justify-content: center;
+}
+
+#few-minutes-left {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    color: var(--grey);
+}
+
+.containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin: 0;
+    padding: 0;
+}
+
+.cta-section {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.cta-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffdb4d;
+}
+.form-container {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 50%;
+    background-color: #9a7334;
+    padding: 20px;
+    transition: bottom 0.5s ease;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.form-container.active {
+    bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--sage-green);
+    border-radius: 5px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: rgb(248, 210, 20);
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: goldenrod;
+    
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    background-color: #e21313;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #ff4d4d;
+}
+
+/* Responsive */
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .carousel-caption {
+        bottom: 370px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-caption {
+        bottom: 125px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+
+    .carousel-caption a {
+        padding: 10px 15px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+}
